@@ -11,7 +11,7 @@ async function main(){
         const db=client.db(dbName);
         const collection=db.collection('user');
         const result=await collection.find({}).toArray();
-        console.log(result);
+        console.log("Data Present inside the database:",result);
         return 'completed';
 }
 main().
